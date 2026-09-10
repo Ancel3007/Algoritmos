@@ -1,0 +1,18 @@
+class Electrodomestico():
+    def __init__(self, referencia, marca, precio)
+        self.referencia = referencia
+        self.marca = marca
+        self. precio = precio
+
+    def __str__(self):
+        return f"La referencia es: {selfreferencia} - La marca es: {self.marca} - El precio es: {self.precio}"
+
+--------------------------CREACIÓN DEL OBJETO-----------------------
+
+def main():
+
+    electrodomestico = Electrodomestico("XRE300", "HACEB", 1500000)
+    print(electrodomestico)
+ 
+if __name__ == "__main__":
+    main()
