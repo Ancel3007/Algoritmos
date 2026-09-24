@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <form method="post">
+        {% csrf_token}
+        <p>
+            <label> Nombre:</label><br>
+            <input
+                type="text"
+                name="nombre"
+                value="{{contacto.nombre|default:''}}"
+                required
+            >
+        </p>
+        <p>
+            <label> Telefono:</label><br>
+            <input
+                type="text"
+                name="telefono"
+                value="{{contacto.telefono|default:''}}"
+                required
+            >
+        </p>
+        <p>
+            <label> Mensaje:</label><br>
+            <textarea 
+                name="mensaje" 
+                required>
+            {{ conctacto.mensaje|default:''}}</textarea>
+        </p>
+        <p>
+            <label> Correo:</label><br>
+            <textarea 
+                name="correo" 
+                required>
+            {{ conctacto.correo|default:''}}</textarea>
+        </p>
+
+    </form>
+</body>
+</html>
